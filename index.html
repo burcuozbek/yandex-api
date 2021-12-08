@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yandex API - Translate APP</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="card">
+          <span class="card-title">Yandex API - Translate APP</span>
+          <div class="enter-text-area">
+            <form id="translate-form">
+              <input type="text" id="word" />
+              <label for="task">How are you?</label>
+              <div class="choose-area">
+                <select class="form-control">
+                  <option>Turkish</option>
+                  <option>French</option>
+                  <option>German</option>
+                  <option>Spanish</option>
+                  <option>Italian</option>
+                  <option>Japanese</option>
+                  <option>Russian</option>
+                  <option>Norwegian</option>
+                </select>
+              </div>
+              <div class="submit">
+                <input type="submit" value="Translate" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="./tr.png" id="output-image" width="50px" height="50px" />
+            <span class="card-title">Turkish</span>
+          </div>
+          <div class="card-content">
+            <span>Translation: </span> <span id="output-word">Nasılsın?</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
