@@ -1,13 +1,62 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
+
 body,
 html {
-  height: 100%;
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
+  margin-bottom: 25px;
+  font-size: larger;
+  letter-spacing: 1.5px;
+}
+#word {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  color: rgb(5, 110, 105);
+  position: relative;
+}
+#word:focus {
+  outline: 0;
+}
+.form-control {
+  margin-bottom: 20px;
+  width: auto;
+  border: none;
+  border-radius: 3px;
+  outline: 0;
+  width: 189px;
+  height: 35px;
+}
+.choose-area:focus {
+  outline: 0;
+}
+.submit {
+  margin-bottom: 10px;
+  width: 189px;
+  height: 35px;
+}
+#output-image {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+label {
+  position: absolute;
+
+  padding: 7px 6px;
 }
