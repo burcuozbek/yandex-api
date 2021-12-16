@@ -3,6 +3,8 @@
   list-style: none;
   text-decoration: none;
   overflow: visible;
+  margin: 0;
+  padding: 0;
 }
 
 body,
@@ -16,33 +18,91 @@ html {
   overflow: visible;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+.container .top {
+  border: 2px solid black;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 10px;
+  padding: 3rem;
+  margin-bottom: 1rem;
+}
+.container .top form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.container .top form input {
+  margin-bottom: 1rem;
+}
+.container .top h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+.container .top h3::before {
+  content: "YANDEX API - TRANSLATE APP";
+  color: grey;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  text-shadow: 0 0 30px darkblue;
+}
+.container .top .choose-area {
+  margin-bottom: 1rem;
+}
+.container .bottom {
+  border: 2px solid black;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 10px;
+  padding: 3rem;
+}
 
-.row {
+/* .container,
+.container .top,
+.container .bottom {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.card-title {
-  margin-bottom: 25px;
-  font-size: larger;
-  letter-spacing: 1.5px;
+.container .top {
+  flex: 50%;
+  justify-content: flex-end;
 }
+.container .top form {
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container .bottom {
+  flex: 50%;
+  justify-content: flex-start;
+}
+
+ */
+
 .input-label {
   position: relative;
-  margin-bottom: 15px;
 }
 label {
   display: block;
-  margin-left: -20px;
 }
 #word {
   width: 250px;
   height: 40px;
-  margin-bottom: 20px;
+
   padding: 10px;
   border: none;
   color: rgb(5, 110, 105);
   border-radius: 10px;
-  margin-left: -22px;
+
   padding: 0 15px;
   transition: all 0.2s;
   color: rgb(224, 94, 94);
@@ -51,39 +111,31 @@ label {
   outline: 0;
 }
 .form-control {
-  margin-bottom: 20px;
   width: 250px;
   height: 40px;
   border: none;
   outline: 0;
   border-radius: 10px;
-  margin-left: -22px;
 }
 .choose-area:focus {
   outline: 0;
 }
 .submit {
-  margin-bottom: 10px;
   width: 250px;
   height: 40px;
   border: none;
   background-color: rgb(121, 172, 187);
   border-radius: 10px;
-  margin-left: -15px;
 }
 .submit:hover {
   letter-spacing: 1.5px;
   background-color: rgb(230, 162, 162);
 }
 #output-image {
-  margin-bottom: 20px;
   margin-top: 10px;
 }
-.lang {
-  margin-bottom: 10px;
-}
+
 .enter-text-area {
   display: flex;
   align-items: center;
-  margin-left: 32px;
 }
