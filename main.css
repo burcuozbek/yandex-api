@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  overflow: visible;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  overflow: visible;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
+  margin-bottom: 25px;
+  font-size: larger;
+  letter-spacing: 1.5px;
+}
+.input-label {
+  position: relative;
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-left: -20px;
+}
+#word {
+  width: 250px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  color: rgb(5, 110, 105);
+  border-radius: 10px;
+  margin-left: -22px;
+  padding: 0 15px;
+  transition: all 0.2s;
+  color: rgb(224, 94, 94);
+}
+#word:focus {
+  outline: 0;
+}
+.form-control {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 40px;
+  border: none;
+  outline: 0;
+  border-radius: 10px;
+  margin-left: -22px;
+}
+.choose-area:focus {
+  outline: 0;
+}
+.submit {
+  margin-bottom: 10px;
+  width: 250px;
+  height: 40px;
+  border: none;
+  background-color: rgb(121, 172, 187);
+  border-radius: 10px;
+  margin-left: -15px;
+}
+.submit:hover {
+  letter-spacing: 1.5px;
+  background-color: rgb(230, 162, 162);
+}
+#output-image {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.lang {
+  margin-bottom: 10px;
+}
+.enter-text-area {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+}
