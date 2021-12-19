@@ -9,12 +9,15 @@ function eventListeners() {
   //Change
   document.getElementById("language").onchange = function () {
     //Arayüz İşlemleri
+    console.log("Event");
+    ui.changeUI();
   };
 }
 const translate = new Translate(
   document.getElementById("word").value,
   document.getElementById("language").value
 );
+const ui = new UI();
 function translateWord(e) {
   translate.changeParameters(
     document.getElementById("word").value,
@@ -25,7 +28,7 @@ function translateWord(e) {
       //Error
       console.log(err);
     } else {
-      console.log(response);
+      ui.displayTranslate(response);
     }
   });
   e.preventDefault();
